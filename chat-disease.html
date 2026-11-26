@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ประเมินความเสี่ยงการเป็นโรคของปลา | AquaAssist AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Prompt', sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background: #F6FBF8;
+    }
+    .topbar {
+      height: 60px;
+      background: #FFFFFF;
+      border-bottom: 1px solid #C9EDD8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+    }
+    .back-btn {
+      text-decoration: none;
+      color: #1F6B43;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      background: #E8F7EF;
+      transition: background 0.2s;
+    }
+    .back-btn:hover { background: #C9EDD8; }
+    .title { color: #1F6B43; font-size: 1.05rem; font-weight: 600; }
+    .chat-frame {
+      flex: 1;
+      width: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="back-btn">← กลับหน้าแรก</a>
+    <div class="title">🩺 ประเมินความเสี่ยงการเป็นโรคของปลา</div>
+  </header>
+
+  <!-- เปลี่ยนลิงก์ด้านล่างเป็น URL ของ Streamlit คุณ (คง ?embed=true ไว้ด้านท้าย) -->
+  <iframe
+    class="chat-frame"
+    src="https://fish-disease-b8gk5bvnxdltdiect8x7ao.streamlit.app/?embed=true"
+    title="AI ประเมินโรคปลา"
+  ></iframe>
+</body>
+</html>
